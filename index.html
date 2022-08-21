@@ -39,16 +39,60 @@
 
       <div class="nav-2">
         <h1>ECONSOR</h1>
-        <div class="nav-items">
-          <a href="#">Our Services</a>
-          <a href="#">Our Work</a>
-          <a href="#">Testimonials</a>
-          <a href="#">About Us</a>
-          <button class="button outline">Start A Project</button>
-        </div>
+        <ul class="nav-items">
+          <li
+            class="services-link"
+            onmouseover="handleHoverDropDown(this)"
+            onmouseleave="handleLeaveDropDown(this)"
+          >
+            <a href="#">Our Services</a>
+            <div>
+              <ul>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Online Marketing</a></li>
+                <li><a href="#">Digitization Advice</a></li>
+                <li><a href="#">Web Design & UI / UX</a></li>
+                <li><a href="#">Online Shops & E-Commerce</a></li>
+                <li><a href="#">Search Engine Optimization</a></li>
+                <li>
+                  <button class="button outline">
+                    View All <i class="fal fa-long-arrow-alt-right"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li
+            class="works-link"
+            onmouseover="handleHoverDropDown(this)"
+            onmouseleave="handleLeaveDropDown(this)"
+          >
+            <a href="#">Our Work</a>
+            <div>
+              <ul>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Online Marketing</a></li>
+                <li><a href="#">Digitization Advice</a></li>
+                <li><a href="#">Web Design & UI / UX</a></li>
+                <li><a href="#">Online Shops & E-Commerce</a></li>
+                <li><a href="#">Search Engine Optimization</a></li>
+                <li>
+                  <button class="button outline">
+                    View All <i class="fal fa-long-arrow-alt-right"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><button class="button outline">Start A Project</button></li>
+        </ul>
         <i class="far fa-bars" onclick="handleNavigationBar()"></i>
       </div>
 
+      <!-- Mobile navigation -->
       <section class="nav-drawer">
         <i class="fal fa-times" onclick="handleNavigationBar()"></i>
         <ul>

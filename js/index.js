@@ -43,3 +43,13 @@ function handleNavigationBar() {
   navigation.style.display = "flex"
   navigation.classList.add("open")
 }
+
+function handleHoverDropDown(element) {
+  const div = element.firstElementChild.nextElementSibling
+  div.style.display = "flex"
+}
+
+function handleLeaveDropDown(element) {
+  const div = element.firstElementChild.nextElementSibling
+  div.style.display = "none"
+}
