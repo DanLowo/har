@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      crossorigin="anonymous"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <script src="./js/index.js" defer></script>
+    <script src="./js/onload.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar">
+      <div class="nav-1">
+        <a href="mailto:projekte@econsor.de">
+          <i class="fal fa-envelope"></i>
+          projekte@econsor.de
+        </a>
+        <div>
+          <a href="#" id="articles">Articles</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact Us</a>
+          <a href="tel:0711 / 46 05 89 - 51">
+            <i class="fal fa-phone-volume"></i>
+            0711 / 46 05 89 - 51
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-2">
+        <h1>ECONSOR</h1>
+        <ul class="nav-items">
+          <li
+            class="services-link"
+            onmouseover="handleHoverDropDown(this)"
+            onmouseleave="handleLeaveDropDown(this)"
+          >
+            <a href="#">Our Services</a>
+            <div>
+              <ul>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Online Marketing</a></li>
+                <li><a href="#">Digitization Advice</a></li>
+                <li><a href="#">Web Design & UI / UX</a></li>
+                <li><a href="#">Online Shops & E-Commerce</a></li>
+                <li><a href="#">Search Engine Optimization</a></li>
+                <li>
+                  <button class="button outline">
+                    View All <i class="fal fa-long-arrow-alt-right"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li
+            class="works-link"
+            onmouseover="handleHoverDropDown(this)"
+            onmouseleave="handleLeaveDropDown(this)"
+          >
+            <a href="#">Our Work</a>
+            <div>
+              <ul>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Online Marketing</a></li>
+                <li><a href="#">Digitization Advice</a></li>
+                <li><a href="#">Web Design & UI / UX</a></li>
+                <li><a href="#">Online Shops & E-Commerce</a></li>
+                <li><a href="#">Search Engine Optimization</a></li>
+                <li>
+                  <button class="button outline">
+                    View All <i class="fal fa-long-arrow-alt-right"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><button class="button outline">Start A Project</button></li>
+        </ul>
+        <i class="far fa-bars" onclick="handleNavigationBar()"></i>
+      </div>
+
+      <!-- Mobile navigation -->
+      <section class="nav-drawer">
+        <i class="fal fa-times" onclick="handleNavigationBar()"></i>
+        <ul>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Our Work</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><button class="button outline">Start A Project</button></li>
+        </ul>
+      </section>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div>
+          <h1>Online Shopping & E-Commerce</h1>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="info">
+          <h1 class="title">Lorem Ipsum è un testo segnaposto</h1>
+          <p>
+            Lorem Ipsum è un testo segnaposto utilizzato nel settore della
+            tipografia e della stampa. Lorem Ipsum è considerato il testo
+            segnaposto standard sin dal sedicesimo secolo, quando un anonimo
+            tipografo prese una cassetta di caratteri e li assemblò per
+            preparare un testo campione. È sopravvissuto non solo a più di
+            cinque secoli, ma anche al passaggio alla videoimpaginazione,
+            pervenendoci sostanzialmente inalterato. Fu reso popolare, negli
+            anni ’60, con la diffusione dei fogli di caratteri trasferibili
+            “Letraset”, che contenevano passaggi del Lorem Ipsum, e più
+            recentemente da software di impaginazione come Aldus PageMaker, che
+            includeva versioni del Lorem Ipsum.
+          </p>
+          <br />
+          <p>
+            Lorem Ipsum è un testo segnaposto utilizzato nel settore della
+            tipografia e della stampa. Lorem Ipsum è considerato il testo
+            segnaposto standard sin dal sedicesimo secolo, quando un anonimo
+            tipografo prese una cassetta
+          </p>
+
+          <div class="advantages">
+            <h3>What You Will Get:</h3>
+            <section>
+              <ul>
+                <li><i class="fas fa-badge-check"></i> Lorem Ipsum è un</li>
+                <li><i class="fas fa-badge-check"></i> sostanzialmente inalterato</li>
+                <li><i class="fas fa-badge-check"></i> contenevano passaggi</li>
+                <li><i class="fas fa-badge-check"></i> Fu reso popolare</li>
+                <li><i class="fas fa-badge-check"></i> Lorem Ipsum è un</li>
+              </ul>
+              <ul>
+                <li><i class="fas fa-badge-check"></i> Lorem Ipsum è un</li>
+                <li><i class="fas fa-badge-check"></i> sostanzialmente inalterato</li>
+                <li><i class="fas fa-badge-check"></i> contenevano passaggi</li>
+                <li><i class="fas fa-badge-check"></i> Fu reso popolare</li>
+                <li><i class="fas fa-badge-check"></i> Lorem Ipsum è un</li>
+              </ul>
+            </section>
+          </div>
+          <div class="call-to-actions">
+            <button class="button">
+              Start A Project
+              <i class="far fa-chevron-right"></i>
+            </button>
+            <button class="button outline">
+              Talk To An Expert
+              <i class="far fa-user-tie"></i>
+            </button>
+          </div>
+        </div>
+        <div class="img-div">
+          <img
+            src="https://businesspartnermagazine.com/wp-content/uploads/2021/02/7-Things-To-Consider-Before-Launching-An-Ecommerce-Business-1.jpeg"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <a href="#"><li>Development</li></a>
+          <a href="#"><li>Online Marketing</li></a>
+          <a href="#"><li>Digitization Advice</li></a>
+          <a href="#"><li>Web Design & UI / UX</li></a>
+          <a href="#"><li>Online Shops & E-Commerce</li></a>
+          <a href="#"><li>Search Engine Optimization</li></a>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <a href="#"><li>Articles</li></a>
+          <a href="#"><li>Careers</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="#"><li>White Paper</li></a>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <a href="#"><li>Development</li></a>
+          <a href="#"><li>Online Marketing</li></a>
+          <a href="#"><li>Digitization Advice</li></a>
+          <a href="#"><li>Web Design & UI / UX</li></a>
+        </ul>
+      </div>
+      <div>
+        <h3>Want To Work With Us</h3>
+        <p>
+          Lorem Ipsum è un testo segnaposto utilizzato nel settore della
+          tipografia e della.
+        </p>
+        <br />
+        <button class="button">
+          Start A Project
+          <i class="far fa-chevron-right"></i>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
