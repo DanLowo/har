@@ -90,6 +90,15 @@ a {
   display: none;
 }
 
+.nav-2 button {
+  color: black;
+  border: 1px solid var(--secondary-color);
+}
+
+.nav-drawer {
+  display: none;
+}
+
 @media screen and (max-width: 650px) {
   .nav-1 {
     padding-top: .7rem;
@@ -109,6 +118,45 @@ a {
   .nav-2 i {
     font-size: 1.5rem;
     display: flex;
+  }
+
+  .nav-drawer {
+    color: white;
+    padding: 1.5rem 1.5rem 1rem 2rem;
+    width: 68%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    flex-direction: column;
+    z-index: 2;
+    background-color: #380641;
+  }
+
+  .nav-drawer i {
+    text-align: right;
+    font-size: 2rem;
+  }
+
+  .nav-drawer ul {
+    gap: 2rem;
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  .nav-drawer a {
+    color: white;
+  }
+
+  .nav-drawer li {
+    font-size: 1.5rem;
+  }
+
+  .nav-drawer button {
+    width: 100%;
+    border: 1px solid white;
   }
 }
 

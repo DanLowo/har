@@ -28,3 +28,18 @@ function workCardHover(element) {
 function workCardHoverLeave(element) {
   element.classList.remove("active");
 }
+
+function handleNavigationBar() {
+  const navigation = document.querySelector(".nav-drawer")
+  
+  if(navigation.classList.contains("open")) {
+    document.body.style.overflow = "auto"
+    navigation.style.display = "none"
+    navigation.classList.remove("open")
+
+    return
+  }
+  document.body.style.overflow = "clip"
+  navigation.style.display = "flex"
+  navigation.classList.add("open")
+}
