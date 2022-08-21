@@ -174,8 +174,10 @@
   .about-us {
     flex-direction: column-reverse;
   }
+  
   .about-us section {
-    width: calc(100% - 1.2rem);
+    padding: 2rem 1rem;
+    width: calc(100% - 2rem);
   }
   .about-us > div {
     width: 100%;
