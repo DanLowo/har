@@ -388,7 +388,7 @@ a {
     right: 0;
     position: fixed;
     flex-direction: column;
-    z-index: 33;
+    z-index: 9999;
     background-color: var(--secondary-color);
   }
 

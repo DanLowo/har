@@ -583,6 +583,14 @@
   margin-top: 8rem;
 }
 
+@media screen and (max-width: 650px) {
+  .swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 0;
+}
+}
+
+
 .swiper-pagination-bullet {
   bottom: 0.065rem;
   position: relative;
