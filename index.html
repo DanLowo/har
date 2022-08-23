@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
       crossorigin="anonymous"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
@@ -15,6 +19,32 @@
     <link rel="stylesheet" href="./css/utils.css" />
     <link rel="stylesheet" href="./css/cards.css" />
     <link rel="stylesheet" href="./css/index.css" />
+
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        speed: 100,
+        spaceBetween: 100,
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+
     <script src="./js/index.js" defer></script>
     <script src="./js/onload.js" defer></script>
   </head>
@@ -28,199 +58,268 @@
         </a>
         <div>
           <a href="#" id="articles">Articles</a>
-          <a href="#">Careers</a>
           <a href="#">Contact Us</a>
           <a href="tel:0711 / 46 05 89 - 51">
             <i class="fal fa-phone-volume"></i>
             0711 / 46 05 89 - 51
           </a>
+          <section>
+            <i class="fal fa-search"></i>
+            <input placeholder="Search..." />
+          </section>
         </div>
       </div>
 
       <div class="nav-2">
         <h1>ECONSOR</h1>
         <ul class="nav-items">
+          <li class="competence-link">
+            <a href="#" class="competence"
+              >Competencies
+              <i class="fal fa-chevron-down"></i>
+
+              <div class="competence-link-div">
+                <section class="nav-large-menu">
+                  <div class="service-items">
+                    <section class="story-cards">
+                      <div class="story-card">
+                        <h3>Digitization advice</h3>
+                        <img
+                          src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp"
+                        />
+                      </div>
+                      <div class="story-card">
+                        <h3>Web Design & UX/UI</h3>
+                        <img
+                          src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp"
+                        />
+                      </div>
+                      <div class="story-card">
+                        <h3>Online marketing</h3>
+                        <img
+                          src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp"
+                        />
+                      </div>
+                      <div class="story-card">
+                        <h3>Online Shops & E-Commerce</h3>
+                        <img
+                          src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp"
+                        />
+                      </div>
+                      <div class="story-card">
+                        <h3>Programming</h3>
+                        <img
+                          src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp"
+                        />
+                      </div>
+                      <div class="story-card">
+                        <h3>Search engine optimization</h3>
+                        <img
+                          src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp"
+                        />
+                      </div>
+                    </section>
+                  </div>
+                  <div class="action-items">
+                    <h2>What Are You Intrested In?</h2>
+                    <div class="items">
+                      <ul>
+                        <li>Create a website</li>
+                        <li>Create an online shop</li>
+                        <li>Recruit employees online</li>
+                        <li>Get more requests</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </a>
+          </li>
+
           <li
-            class="services-link"
+            class="credentials-link"
             onmouseover="handleHoverDropDown(this)"
             onmouseleave="handleLeaveDropDown(this)"
           >
-            <a href="#">Our Services</a>
+            <a href="#"
+              >Credentials
+              <i class="fal fa-chevron-down"></i>
+            </a>
             <div>
               <ul>
-                <li><a href="#">Development</a></li>
-                <li><a href="#">Online Marketing</a></li>
-                <li><a href="#">Digitization Advice</a></li>
-                <li><a href="#">Web Design & UI / UX</a></li>
-                <li><a href="#">Online Shops & E-Commerce</a></li>
-                <li><a href="#">Search Engine Optimization</a></li>
-                <li>
-                  <button class="button outline">
-                    View All <i class="fal fa-long-arrow-alt-right"></i>
-                  </button>
-                </li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Customer testimonials</a></li>
               </ul>
             </div>
           </li>
 
-          <li
-            class="works-link"
-            onmouseover="handleHoverDropDown(this)"
-            onmouseleave="handleLeaveDropDown(this)"
-          >
-            <a href="#">Our Work</a>
-            <div>
-              <ul>
-                <li><a href="#">Development</a></li>
-                <li><a href="#">Online Marketing</a></li>
-                <li><a href="#">Digitization Advice</a></li>
-                <li><a href="#">Web Design & UI / UX</a></li>
-                <li><a href="#">Online Shops & E-Commerce</a></li>
-                <li><a href="#">Search Engine Optimization</a></li>
-                <li>
-                  <button class="button outline">
-                    View All <i class="fal fa-long-arrow-alt-right"></i>
-                  </button>
-                </li>
-              </ul>
-            </div>
+          <li class="company-link">
+            <a href="#"
+              >Company <i class="fal fa-chevron-down"></i>
+
+              <div class="company-link-div">
+                <section class="nav-large-menu">
+                  <div class="service-items">
+                    <h2>The ECONSOR Group</h2>
+                    <h4>
+                      70 employees, 6 locations, 1 goal: your success on the
+                      internet.
+                    </h4>
+                    <p>
+                      With 5 specialist teams, we offer you project experience
+                      and Internet competence bundled with one agency partner.
+                      We have been developing tailor-made solutions with
+                      Shopware, Magento, TYPO3 and WordPress since 2008.
+                      Seamlessly integrated into your digitization strategy and
+                      your online marketing concept.
+                    </p>
+
+                    <div class="links">
+                      <h3>Company Links</h3>
+                      <ul>
+                        <li>News</li>
+                        <li>Leadership team</li>
+                        <li>This is how we work</li>
+                        <li>5 reasons for ECONSOR</li>
+                        <li>Locations</li>
+                        <li>White paper</li>
+                        <li>Expert Videos</li>
+                        <li>Newsletter</li>
+                      </ul>
+                    </div>
+
+                    <div class="links">
+                      <h3>Our Partners</h3>
+                      <ul>
+                        <li>
+                          <img
+                            src="https://www.econsor.de/wp-content/uploads/2021/07/google-partner.svg"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="https://www.econsor.de/wp-content/uploads/2021/01/badge-silver-member-new.svg"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="https://www.econsor.de/wp-content/uploads/2021/11/shopware-solution.svg"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="https://www.econsor.de/wp-content/uploads/2021/01/trusted-shops-sales-partner-minify.svg"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="https://www.econsor.de/wp-content/uploads/2021/02/agentursiegel-econsor-sistrix.svg"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="action-items">
+                    <h2>Contact Us</h2>
+                    <div class="items">
+                      <img
+                        src="https://www.econsor.de/wp-content/uploads/2021/05/geschaeftsfuerer-sebastian-kuebler-1.jpg.webp"
+                      />
+                      <h3>Sebastian Kuebler</h3>
+                      <p>Founder of ECONSOR</p>
+                      <ul>
+                        <li>
+                          <i class="fal fa-phone-volume"></i>
+                          0711 / 46 05 89 - 51
+                        </li>
+                        <li>
+                          <i class="fal fa-envelope"></i>
+                          projekte@econsor.de
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      Would you like to get to know us and our services better?
+                      We would be happy to clarify your questions during an
+                      initial consultation.
+                      <button class="button outline">
+                        Get In Touch
+                        <i class="fal fa-chevron-double-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </a>
           </li>
+
           <li><a href="#">Testimonials</a></li>
           <li><a href="#">About Us</a></li>
           <li><button class="button outline">Start A Project</button></li>
         </ul>
-        <i class="far fa-bars" onclick="handleNavigationBar()"></i>
+        <i class="far fa-bars nav-icon" onclick="handleNavigationBar()"></i>
       </div>
 
       <!-- Mobile navigation -->
       <section class="nav-drawer">
         <i class="fal fa-times" onclick="handleNavigationBar()"></i>
         <ul>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Our Work</a></li>
+          <li><a href="#">Competencies</a></li>
+          <li><a href="#">Credentials</a></li>
+          <li><a href="#">Company</a></li>
           <li><a href="#">Testimonials</a></li>
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Articles</a></li>
           <li><button class="button outline">Start A Project</button></li>
         </ul>
       </section>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div>
-        <h1>We Are Your Digital Agency</h1>
-        <h3>
-          The ECONSOR Group is your leading digital agency. Our services
-          includes: consulting, web design & UX/UI, programming, online
-          marketing and more.
-        </h3>
-        <div class="call-to-actions">
-          <button class="button">
-            Start A Project
-            <i class="far fa-chevron-right"></i>
-          </button>
-          <button class="button outline">
-            Learn More
-            <i class="far fa-chevron-right"></i>
-          </button>
+    <section class="swiper hero">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <h1>We Are Your Digital Agency</h1>
+            <h3>
+              The ECONSOR Group is your leading digital agency. Our services
+              includes: consulting, web design & UX/UI, programming, online
+              marketing and more.
+            </h3>
+            <div class="call-to-actions">
+              <button class="button">
+                Start A Project
+                <i class="far fa-chevron-right"></i>
+              </button>
+              <button class="button outline">
+                Learn More
+                <i class="far fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <h1>Build The Next Big Business</h1>
+            <h3>
+              Lorem Ipsum è un testo segnaposto utilizzato nel settore della
+              tipografia e della stampa, Lorem Ipsum è considerato.
+            </h3>
+            <div class="call-to-actions">
+              <button class="button">
+                Our Services
+                <i class="far fa-chevron-right"></i>
+              </button>
+              <button class="button outline">
+                Learn More
+                <i class="far fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Our Services Section -->
-    <section class="services">
-      <h1 class="title">What Can We Do For You?</h1>
-      <p>
-        Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-        tipografia e della stampa, Lorem Ipsum è considerato.
-      </p>
-      <!-- <hr class="line"> -->
-      <div class="service-cards">
-        <div
-          class="service-card advice"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-handshake"></i>
-          <h2>Digitization Advice</h2>
-          <p>
-            As a digital agency, we support the relaunch, the implementation of
-            new e-commerce strategies
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
-        </div>
-
-        <div
-          class="service-card design"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-vector-square"></i>
-          <h2>Web Design & UI / UX</h2>
-          <p>
-            We create attractive web designs and UX/UI according to current
-            standards and innovative solutions
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
-        </div>
-
-        <div
-          class="service-card analytics"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-bullhorn"></i>
-          <h2>Online Marketing</h2>
-          <p>
-            To increase sales and improve your website, we offer you individual
-            marketing solutions.
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
-        </div>
-
-        <div
-          class="service-card shop"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-shopping-cart"></i>
-          <h2>Online Shops & E-Commerce</h2>
-          <p>
-            We develop sophisticated e-commerce projects: from the first
-            workshop to the setup of your online shop
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
-        </div>
-
-        <div
-          class="service-card coding"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-laptop-code"></i>
-          <h2>Development</h2>
-          <p>
-            We program individual interfaces, e-commerce extensions, individual
-            solutions for websites.
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
-        </div>
-
-        <div
-          class="service-card seo"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-analytics"></i>
-          <h2>Search Engine Optimization</h2>
-          <p>
-            For optimal display in the search result pages (SERP), we optimize
-            your website according to Google standards
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
-        </div>
-      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
     </section>
 
     <!-- Our Clients -->
@@ -237,356 +336,599 @@
     </section>
 
     <!-- About Us -->
-    
     <section class="about-us">
-      <section class="services">
-        <h1 class="title">About Us</h1>
-        <div class="about-text">
-          <p>
-            È universalmente riconosciuto che un lettore che osserva il layout
-            di una pagina viene distratto dal contenuto testuale se questo è
-            leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una
-            normale distribuzione delle lettere (al contrario di quanto avviene
-            se si utilizzano brevi frasi ripetute, ad esempio “testo qui”),
-            apparendo come un normale blocco di testo leggibile. Molti software
-            di impaginazione e di web design utilizzano Lorem Ipsum come testo
-            modello. Molte versioni del testo sono state prodotte negli anni, a
-            volte casualmente, a volte di proposito (ad esempio inserendo
-            passaggi ironici).
-          </p>
-          <br />
-          <p>
-            Dizionario di oltre 200 vocaboli latini, combinati con un insieme di
-            modelli di strutture di periodi, per generare passaggi di testo
-            verosimili. Il testo così generato è sempre privo di ripetizioni,
-            parole imbarazzanti o fuori luogo ecc.
-          </p>
-
-          <button class="button outline">
-            Learn More
-            <i class="far fa-chevron-right"></i>
-          </button>
+      <h1 class="title">Your leading digital agency</h1>
+      <h4>Stuttgart, Heilbronn, Heidelberg, Frankfurt, Munich & Nuremberg</h4>
+      <p>
+        Our customers are small and medium-sized companies, service providers
+        and experts. We advise you independently and individually. Get to know
+        us and take the first step towards your online success!
+      </p>
+      <section class="stats">
+        <div class="item">
+          <i class="fal fa-home-alt"></i>
+          <div>
+            <h2>1</h2>
+            <p>Project Room</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fal fa-globe-europe"></i>
+          <div>
+            <h2>6</h2>
+            <p>Locations</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fal fa-users"></i>
+          <div>
+            <h2>5</h2>
+            <p>Specialist Teams</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fal fa-calendar-alt"></i>
+          <div>
+            <h2>300</h2>
+            <p>Projects Per Year</p>
+          </div>
         </div>
       </section>
-      <div>
-        <img src="./images/about-us.jpg" />
+      <p>
+        The ECONSOR Group is your leading digital agency in Baden-Württemberg.
+        Our services include consulting, web design & UX/UI, programming, online
+        marketing, ... Our teams at the locations in Stuttgart, Heilbronn,
+        Heidelberg, Frankfurt, Munich & Nuremberg consist of experienced
+        employees who are all experts in their respective service areas. This
+        gives us enormous expertise, which we would be happy to use for your
+        project.
+      </p>
+      <button class="button">Start A Project</button>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="new-services">
+      <h1 class="title">Services</h1>
+      <p>As a digital agency, we master the greatest challenges</p>
+      <!-- <hr class="line"> -->
+      <section class="services-cards">
+        <div class="services-card">
+          <i class="fal fa-handshake"></i>
+          <h2>Digitization advice</h2>
+          <p>
+            As an internet agency , we are pioneers for many ideas and
+            approaches in the field of digitization. As a digital agency, we
+            support the relaunch, the implementation of new e-commerce
+            strategies or take over the support of fundamental system decisions.
+
+            <a href="#">
+              More about digitization
+              <i class="fal fa-chevron-double-right"></i>
+            </a>
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="fal fa-vector-square"></i>
+          <h2>Web Design & UX/UI</h2>
+          <p>
+            We create attractive web designs and UX/UI according to current
+            standards and innovative solutions. Whether it's a new website,
+            online shop or relaunch - we are experienced and know our way
+            around.
+
+            <a href="#">
+              More about web design
+              <i class="fal fa-chevron-double-right"></i>
+            </a>
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="fal fa-bullhorn"></i>
+          <h2>Online marketing</h2>
+          <p>
+            To increase sales and improve your website, we offer you individual
+            marketing solutions. In addition to social media, newsletter and
+            search engine marketing, we also take care of the support.
+
+            <a href="#">
+              More about marketing
+              <i class="fal fa-chevron-double-right"></i>
+            </a>
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="fal fa-shopping-cart"></i>
+          <h2>Online Shops & E-Commerce</h2>
+          <p>
+            We develop sophisticated e-commerce projects: from the first
+            workshop to the setup of your online shop, extensions, interfaces,
+            ... to the support of individual e-commerce solutions.
+
+            <a href="#">
+              More about online shops
+              <i class="fal fa-chevron-double-right"></i>
+            </a>
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="fal fa-laptop-code"></i>
+          <h2>Programming</h2>
+          <p>
+            We program individual interfaces, e-commerce extensions, individual
+            solutions for websites, digital applications and much more for you.
+            By using the latest technologies, we enable you to digitize your
+            processes and your company.
+
+            <a href="#">
+              More about programming
+              <i class="fal fa-chevron-double-right"></i>
+            </a>
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="fal fa-analytics"></i>
+          <h2>Search engine optimization</h2>
+          <p>
+            For optimal display in the search result pages (SERP), we optimize
+            your website according to Google standards. As an agency for search
+            engine optimization, we are also happy to take over the support,
+            control and continuous improvement of your site.
+
+            <a href="#">
+              More about seo
+              <i class="fal fa-chevron-double-right"></i>
+            </a>
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <!-- Refrences Section -->
+    <section class="references">
+      <h1 class="title">References of our digital agency</h1>
+      <p>success stories</p>
+
+      <div class="stories">
+        <div class="story-card">
+          <h3>
+            <a href="#">Bembe parquet</a>
+          </h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp"
+          />
+        </div>
+        <div class="story-card">
+          <h3>
+            <a href="#">Easy Software</a>
+          </h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2018/12/Easy-Home-Category-teaser-2-1500x971.jpg.webp"
+          />
+        </div>
+        <div class="story-card">
+          <h3>
+            <a href="#">Lamisse online shop</a>
+          </h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2017/10/online-shop-lamisse-1-1500x971.jpg.webp"
+          />
+        </div>
+
+        <div class="story-card">
+          <h3>
+            <a href="#">Kolle Zool</a>
+          </h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2021/10/case-study-koelle-zoo-online-shop-1500x971.jpg.webp"
+          />
+        </div>
+        <div class="story-card">
+          <h3>
+            <a href="#">Industry portal Supermarket Inside</a>
+          </h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2018/12/startseite-supermarkt-inside--1500x971.jpg.webp"
+          />
+        </div>
+        <div class="story-card explore">
+          <h3>Explore More</h3>
+          <h4>
+            <a href="#">Explore all references</a>
+          </h4>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2021/10/case-study-koelle-zoo-online-shop-1500x971.jpg.webp"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--  Systems Section -->
+    <section class="system">
+      <h1 class="title">System competence of our digital agency</h1>
+      <p class="sub">
+        As a digital agency, we focus on the concept and implementation of your
+        online and e-commerce strategy based on the leading systems.
+      </p>
+      <p class="sub">
+        <i>You use one of these technologies or want to? Then talk to us:</i>
+      </p>
+
+      <div class="tools">
+        <div class="tool">
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2020/10/Shopware-1.png"
+          />
+          <p>
+            "Shopware" is one of the most user-friendly and well-known shop
+            systems. Our certified Shopware experts have been working with this
+            software for many years. We bring experience from over 100 projects
+            and know the functions and advantages.
+          </p>
+          <a href="#">
+            <button class="button outline">
+              Your Shopware agency<i class="fal fa-chevron-double-right"></i>
+            </button>
+          </a>
+        </div>
+        <div class="tool">
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2020/10/Magento-1.png.webp"
+          />
+          <p>
+            As a Magento agency, we are one of the leading providers in the
+            region. Magento as a shop system offers various solutions and
+            features for user-friendly online shops. As an Adobe partner, we
+            support you in the design and implementation of your dream shop.
+          </p>
+          <a href="#">
+            <button class="button outline">
+              Your Magento agency<i class="fal fa-chevron-double-right"></i>
+            </button>
+          </a>
+        </div>
+        <div class="tool">
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2020/10/TYPO3-1.png.webp"
+          />
+          <p>
+            Complex websites and portals require powerful content management
+            systems that offer very good performance even with high visitor
+            numbers. As a TYPO3 partner agency, we program individual solutions
+            or multilingual websites for you.
+          </p>
+          <a href="#">
+            <button class="button outline">
+              Your TYPO3 agency<i class="fal fa-chevron-double-right"></i>
+            </button>
+          </a>
+        </div>
+        <div class="tool">
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2020/10/Wordpress-1.png.webp"
+          />
+          <p>
+            WordPress is the most popular content management system for blogs
+            and simple websites. The CMS offers far more functionalities than a
+            blog system. As a WordPress agency, our experts design and program
+            your individual website with 12 years of experience.
+          </p>
+          <a href="#">
+            <button class="button outline">
+              Your WordPress agency<i class="fal fa-chevron-double-right"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section class="services our-clients">
+      <h1 class="title">Certifications and Partners</h1>
+      <p>Excellent work</p>
+
+      <img
+        id="certification-img"
+        src="https://www.econsor.de/wp-content/uploads/2022/06/econsor-partner.jpg.webp"
+      />
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+      <div class="details">
+        <h1>
+          <i class="fal fa-map-marker-alt"></i>
+        </h1>
+        <h1 class="title">The locations of our digital agency</h1>
+        <h4>6x in southern Germany</h4>
+        <br />
+        <p id="about-location">
+          We are your digital agency in Stuttgart for individual requirements
+          and solutions for your website. Get to know us
+        </p>
+        <div>
+          <button class="button">Go To Agency Stuttgart</button>
+        </div>
+      </div>
+
+      <div class="items stories">
+        <div class="story-card" onmouseenter="handleLocation(this)">
+          <h3>Digital Agency Stuttgart</h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2021/05/standort-stuttgart.jpg.webp"
+          />
+        </div>
+        <div class="story-card" onmouseenter="handleLocation(this)">
+          <h3>Digital Agency Heilbronn</h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2021/05/standort-heilbronn.jpg.webp"
+          />
+        </div>
+        <div class="story-card" onmouseenter="handleLocation(this)">
+          <h3>Digital Agency Heidelberg</h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2021/05/standort-heidelberg.jpg.webp"
+          />
+        </div>
+
+        <div class="story-card" onmouseenter="handleLocation(this)">
+          <h3>Digital Agency Nuremberg</h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2021/08/standort-nuernberg.jpg.webp"
+          />
+        </div>
+        <div class="story-card" onmouseenter="handleLocation(this)">
+          <h3>Digital Agency Munich</h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2021/01/standort-muenchen.jpg.webp"
+          />
+        </div>
+        <div class="story-card" onmouseenter="handleLocation(this)">
+          <h3>Digital Agency Frankfurt</h3>
+          <img
+            src="https://www.econsor.de/wp-content/uploads/2021/06/standort-frankfurt.jpg.webp"
+          />
+        </div>
       </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="testimonials">
-      <h1 class="title">What Our Clients Say About Us</h1>
-      <p>
-        Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-        tipografia e della stampa, Lorem Ipsum è considerato.
-      </p>
-
-      <div class="testimonial-cards">
-        <div class="card">
+      <div class="overlay"></div>
+      <div class="main">
+        <h2>
           <i class="fas fa-quote-left"></i>
-          <p>
-            Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-            tipografia e della stampa, Lorem Ipsum è considerato. Lorem Ipsum è
-            un testo segnaposto utilizzato.
-          </p>
-          <img
-            src="https://play-lh.googleusercontent.com/69DEGMGZWRsrGy6AyIZ3k8xJGMGXHfr6jzn63IBBcyD3CgyixnmRZIfMf0QrbdWUQTBg=w240-h480-rw"
-          />
-          <h4>Mark Cuban - Netflix</h4>
-        </div>
-
-        <div class="card">
-          <i class="fas fa-quote-left"></i>
-          <p>
-            Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-            tipografia e della stampa, Lorem Ipsum è considerato. Lorem Ipsum è
-            un testo segnaposto utilizzato.
-          </p>
-          <img
-            src="https://play-lh.googleusercontent.com/69DEGMGZWRsrGy6AyIZ3k8xJGMGXHfr6jzn63IBBcyD3CgyixnmRZIfMf0QrbdWUQTBg=w240-h480-rw"
-          />
-          <h4>Mary Jane - Google</h4>
-        </div>
-
-        <div class="card">
-          <i class="fas fa-quote-left"></i>
-          <p>
-            Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-            tipografia e della stampa, Lorem Ipsum è considerato. Lorem Ipsum è
-            un testo segnaposto utilizzato.
-          </p>
-          <img
-            src="https://play-lh.googleusercontent.com/69DEGMGZWRsrGy6AyIZ3k8xJGMGXHfr6jzn63IBBcyD3CgyixnmRZIfMf0QrbdWUQTBg=w240-h480-rw"
-          />
-          <h4>John Doe - Uber</h4>
-        </div>
+          When our customers work with us as a digital agency, the expectations
+          are high. Here, however, we can boast equally with creation, idea and
+          technology. Together we develop new solutions that justify a point of
+          difference and optimize business processes internally and for
+          customers.
+          <i class="fas fa-quote-right"></i>
+        </h2>
+        <h3>Sebastian Kuebler</h3>
+        <h4>Founder of ECONSOR</h4>
       </div>
-
-      <div class="start-project">
-        <button class="button">
-          Start A Project
-          <i class="far fa-chevron-right"></i>
-        </button>
+      <div class="img-div">
+        <img src="./images/ceo.png" />
       </div>
     </section>
 
-    <!-- Our Works Section -->
-    <section class="services works">
-      <h1 class="title">Our Works</h1>
-      <p>
-        Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-        tipografia e della stampa, Lorem Ipsum è considerato.
-      </p>
+    <!-- Our Services Section -->
+    <section class="services">
+      <h1 class="title">
+        We develop digital strategies and produce outstanding solutions
+      </h1>
+      <p>With us, companies win in digitization</p>
       <!-- <hr class="line"> -->
+
       <div class="service-cards">
-        <div
-          class="service-card advice"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-handshake"></i>
-          <h2>Digitization Advice</h2>
-          <p>
-            As a digital agency, we support the relaunch, the implementation of
-            new e-commerce strategies
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
+        <div class="service-card advice">
+          <img src="./images/agency.jpg" />
+          <div>
+            <h2>Digital agency</h2>
+            <p>
+              <a href="#">As an internet</a> agency or digital agency , we are
+              the first point of contact for many ideas and approaches in the
+              field of digitization. Whether it's support for the relaunch,
+              implementation of new e-commerce strategies or support for
+              fundamental system decisions. <br /><br />
+              Although the keyboard of our competencies is extensive and
+              interdisciplinary, "digital" is our topic. When developing new
+              solutions, we rely on both design and technology.
+            </p>
+          </div>
         </div>
 
-        <div
-          class="service-card design"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-vector-square"></i>
-          <h2>Web Design & UI / UX</h2>
-          <p>
-            We create attractive web designs and UX/UI according to current
-            standards and innovative solutions
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
+        <div class="service-card design">
+          <img src="./images/design.jpg" />
+          <div>
+            <h2>Digital design - for us UX / UI is always the basis</h2>
+            <p>
+              UX/UI experts and
+              <a href="#"
+                >web designers work in our digital agency in Stuttgart</a
+              >
+              , Heilbronn, Heidelberg or at the Frankfurt location. Our digital
+              experts design online solutions according to the recognized
+              standards in the field of digitization and UX/UI. <br /><br />
+              What is a trend today could be the new standard tomorrow. And
+              maybe already outdated next week. That is why we address issues
+              such as scalability, compatibility and flexibility with existing
+              systems when developing our digital design.
+            </p>
+          </div>
         </div>
 
-        <div
-          class="service-card analytics"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-bullhorn"></i>
-          <h2>Online Marketing</h2>
-          <p>
-            To increase sales and improve your website, we offer you individual
-            marketing solutions.
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
+        <div class="service-card analytics">
+          <img src="./images/analytics.jpg" />
+          <div>
+            <h2>Digital Marketing / Digital Agency</h2>
+            <p>
+              Few things are as powerful as digital marketing and the approaches
+              that result from it. Through our strategic approaches, we generate
+              additional sales through sustainable digitization strategies,
+              individual digital marketing and appropriate digital marketing
+              support.
+              <br /><br />
+              We promote the integration of e-commerce, marketing and IT
+              strategies into our customers' application landscape. As a digital
+              agency, this service is our daily bread - you can rely on us!
+            </p>
+          </div>
         </div>
 
-        <div
-          class="service-card shop"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-shopping-cart"></i>
-          <h2>Online Shops & E-Commerce</h2>
-          <p>
-            We develop sophisticated e-commerce projects: from the first
-            workshop to the setup of your online shop
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
+        <div class="service-card shop">
+          <img src="./images/shopping.jpg" />
+          <div>
+            <h2>Digital Commerce: E-Commerce</h2>
+            <p>
+              Digital trade today takes place in e-commerce. We develop the
+              solutions for this. From the first consultation and conception to
+              the implementation of demanding e-commerce projects. Talk to our
+              digital commerce experts and consultants for your e-commerce
+              project.
+            </p>
+            <a href="#">
+              <button class="button outline">
+                For online shop creation<i
+                  class="fal fa-chevron-double-right"
+                ></i>
+              </button>
+            </a>
+          </div>
         </div>
 
-        <div
-          class="service-card coding"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-laptop-code"></i>
-          <h2>Development</h2>
-          <p>
-            We program individual interfaces, e-commerce extensions, individual
-            solutions for websites.
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
+        <div class="service-card coding">
+          <img src="./images/coding.jpg" />
+          <div>
+            <h2>Implementation of digital development</h2>
+            <p>
+              Due to the size of our team, we have the right expertise in topics
+              such as scalability, availability, operational management, data
+              security as well as compatibility and interface technologies.
+              <br /><br />
+              Our experts range from individual CMS to e-commerce to UX/UI in
+              the field of software development.
+            </p>
+            <a href="#">
+              <button class="button outline">
+                For Programming<i class="fal fa-chevron-double-right"></i>
+              </button>
+            </a>
+          </div>
         </div>
 
-        <div
-          class="service-card seo"
-          onmouseover="cardHover(this)"
-          onmouseleave="cardHoverLeave(this)"
-        >
-          <i class="fal fa-analytics"></i>
-          <h2>Search Engine Optimization</h2>
-          <p>
-            For optimal display in the search result pages (SERP), we optimize
-            your website according to Google standards
-          </p>
-          <a href="/services.html"><button class="button outline">Learn More</button></a>
+        <div class="service-card seo">
+          <img src="./images/agency.jpg" />
+          <div>
+            <h2>Online marketing</h2>
+            <p>
+              We bring you forward as a digital agency at Google. Optimal
+              positions in the result pages (SERP) or very efficient positions
+              in Google Ads. As a digital agency, we optimize your appearance in
+              accordance with Google standards. Talk to us about support,
+              controlling or continuous improvement of your site.
+            </p>
+            <a href="#">
+              <button class="button outline">
+                To online marketing<i class="fal fa-chevron-double-right"></i>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Articles Section -->
-    <section class="articles">
-      <h1 class="title">Recent Articles</h1>
-      <p>
-        Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-        tipografia e della.
-      </p>
+    <section class="articles references">
+      <h1 class="title">News</h1>
+      <p>News about us and the web</p>
 
-      <div>
-        <div class="article">
+      <div class="stories">
+        <div class="story-card">
+          <h3>
+            <a href="#"
+              >Yoast SEO vs. Rank Math – WordPress SEO Plugins Compared</a
+            >
+          </h3>
           <img
-            src="https://www.econsor.de/wp-content/uploads/2022/05/Beratungssituation-710x375.jpg.webp"
+            src="https://www.econsor.de/wp-content/uploads/2022/08/Yoast-SEO-vs.-Rank-Math-710x375.png"
           />
-          <div>
-            <h2>Beginner's Guide To Marketing</h2>
-            <p>
-              Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-              tipografia e della.
-            </p>
-            <div class="action">
-              <button class="button outline">
-                Read
-                <i class="fal fa-long-arrow-right"></i>
-              </button>
-            </div>
-          </div>
         </div>
-        <div class="article">
+        <div class="story-card">
+          <h3>
+            <a href="#">
+              This is how recruiting works today: the guide for e-recruiting
+            </a>
+          </h3>
           <img
-            src="https://www.econsor.de/wp-content/uploads/2022/07/internetagentur-muenchen-710x375.jpg.webp"
+            src="https://www.econsor.de/wp-content/uploads/2022/05/Beratungssituation-710x375.jpg"
           />
-          <div>
-            <h2>Beginner's Guide To Marketing</h2>
-            <p>
-              Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-              tipografia e della.
-            </p>
-            <div class="action">
-              <button class="button outline">
-                Read
-                <i class="fal fa-long-arrow-right"></i>
-              </button>
-            </div>
-          </div>
         </div>
-        <div class="article">
+
+        <div class="story-card">
+          <h3>
+            <a href="#">ECONSOR opens sixth location in Munich</a>
+          </h3>
           <img
-            src="https://www.econsor.de/wp-content/uploads/2022/05/Beratungssituation-710x375.jpg.webp"
+            src="https://www.econsor.de/wp-content/uploads/2022/07/internetagentur-muenchen-710x375.jpg"
           />
-          <div>
-            <h2>Beginner's Guide To Marketing</h2>
-            <p>
-              Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-              tipografia e della.
-            </p>
-            <div class="action">
-              <button class="button outline">
-                Read
-                <i class="fal fa-long-arrow-right"></i>
-              </button>
-            </div>
-          </div>
         </div>
-        <div class="article">
+        <div class="story-card">
+          <h3>
+            <a href="#"
+              >What is the Google Search Console? – this is what you need to
+              know about the tool</a
+            >
+          </h3>
           <img
-            src="https://www.econsor.de/wp-content/uploads/2022/08/Yoast-SEO-vs.-Rank-Math-710x375.png.webp"
+            src="https://www.econsor.de/wp-content/uploads/2022/07/was-ist-google-search-console-710x375.jpg"
           />
-          <div>
-            <h2>Beginner's Guide To Marketing</h2>
-            <p>
-              Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-              tipografia e della.
-            </p>
-            <div class="action">
-              <button class="button outline">
-                Read
-                <i class="fal fa-long-arrow-right"></i>
-              </button>
-            </div>
-          </div>
         </div>
-        <div class="article">
-          <img
-            src="https://www.econsor.de/wp-content/uploads/2022/05/Beratungssituation-710x375.jpg.webp"
-          />
-          <div>
-            <h2>Beginner's Guide To Marketing</h2>
-            <p>
-              Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-              tipografia e della.
-            </p>
-            <div class="action">
-              <button class="button outline">
-                Read
-                <i class="fal fa-long-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="article">
-          <img
-            src="https://www.econsor.de/wp-content/uploads/2022/07/internetagentur-muenchen-710x375.jpg.webp"
-          />
-          <div>
-            <h2>Beginner's Guide To Marketing</h2>
-            <p>
-              Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-              tipografia e della.
-            </p>
-            <div class="action">
-              <button class="button outline">
-                Read
-                <i class="fal fa-long-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="action">
+        <button class="button">All News</button>
       </div>
     </section>
 
     <footer class="footer">
-      <div>
-        <h3>Services</h3>
-        <ul>
-          <a href="#"><li>Development</li></a>
-          <a href="#"><li>Online Marketing</li></a>
-          <a href="#"><li>Digitization Advice</li></a>
-          <a href="#"><li>Web Design & UI / UX</li></a>
-          <a href="#"><li>Online Shops & E-Commerce</li></a>
-          <a href="#"><li>Search Engine Optimization</li></a>
-        </ul>
+      <div class="links">
+        <a href="#">
+          <i class="fal fa-envelope"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
       </div>
-      <div>
-        <h3>Company</h3>
-        <ul>
-          <a href="#"><li>Articles</li></a>
-          <a href="#"><li>Careers</li></a>
-          <a href="#"><li>Contact</li></a>
-          <a href="#"><li>White Paper</li></a>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <a href="#"><li>Development</li></a>
-          <a href="#"><li>Online Marketing</li></a>
-          <a href="#"><li>Digitization Advice</li></a>
-          <a href="#"><li>Web Design & UI / UX</li></a>
-        </ul>
-      </div>
-      <div>
-        <h3>Want To Work With Us</h3>
-        <p>
-          Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-          tipografia e della.
-        </p>
-        <br />
-        <button class="button">
-          Start A Project
-          <i class="far fa-chevron-right"></i>
-        </button>
-      </div>
+
+      <ul>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Imprint</a>
+        </li>
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+        <li>
+          <a href="#">Conditions</a>
+        </li>
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

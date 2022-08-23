@@ -1,222 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      crossorigin="anonymous"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/utils.css" />
-    <link rel="stylesheet" href="./css/services.css" />
-    <script src="./js/index.js" defer></script>
-    <script src="./js/onload.js" defer></script>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="navigation-bar">
-      <div class="nav-1">
-        <a href="mailto:projekte@econsor.de">
-          <i class="fal fa-envelope"></i>
-          projekte@econsor.de
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link crossorigin="anonymous" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="./css/utils.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/services.css" />
+  <script src="./js/index.js" defer></script>
+  <script src="./js/onload.js" defer></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navigation-bar">
+    <div class="nav-1">
+      <a href="mailto:projekte@econsor.de">
+        <i class="fal fa-envelope"></i>
+        projekte@econsor.de
+      </a>
+      <div>
+        <a href="#" id="articles">Articles</a>
+        <a href="#">Contact Us</a>
+        <a href="tel:0711 / 46 05 89 - 51">
+          <i class="fal fa-phone-volume"></i>
+          0711 / 46 05 89 - 51
         </a>
-        <div>
-          <a href="#" id="articles">Articles</a>
-          <a href="#">Careers</a>
-          <a href="#">Contact Us</a>
-          <a href="tel:0711 / 46 05 89 - 51">
-            <i class="fal fa-phone-volume"></i>
-            0711 / 46 05 89 - 51
+        <section>
+          <i class="fal fa-search"></i>
+          <input placeholder="Search..." />
+        </section>
+      </div>
+    </div>
+
+    <div class="nav-2">
+      <h1>ECONSOR</h1>
+      <ul class="nav-items">
+        <li class="competence-link">
+          <a href="#" class="competence">Competencies
+            <i class="fal fa-chevron-down"></i>
+
+            <div class="competence-link-div">
+              <section class="nav-large-menu">
+                <div class="service-items">
+                  <section class="story-cards">
+                    <div class="story-card">
+                      <h3>Digitization advice</h3>
+                      <img
+                        src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp" />
+                    </div>
+                    <div class="story-card">
+                      <h3>Web Design & UX/UI</h3>
+                      <img
+                        src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp" />
+                    </div>
+                    <div class="story-card">
+                      <h3>Online marketing</h3>
+                      <img
+                        src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp" />
+                    </div>
+                    <div class="story-card">
+                      <h3>Online Shops & E-Commerce</h3>
+                      <img
+                        src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp" />
+                    </div>
+                    <div class="story-card">
+                      <h3>Programming</h3>
+                      <img
+                        src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp" />
+                    </div>
+                    <div class="story-card">
+                      <h3>Search engine optimization</h3>
+                      <img
+                        src="https://www.econsor.de/wp-content/uploads/2017/08/Bembe-Home-Category-1500x971.jpg.webp" />
+                    </div>
+                  </section>
+                </div>
+                <div class="action-items">
+                  <h2>What Are You Intrested In?</h2>
+                  <div class="items">
+                    <ul>
+                      <li>Create a website</li>
+                      <li>Create an online shop</li>
+                      <li>Recruit employees online</li>
+                      <li>Get more requests</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </div>
           </a>
-        </div>
-      </div>
+        </li>
 
-      <div class="nav-2">
-        <h1>ECONSOR</h1>
-        <ul class="nav-items">
-          <li
-            class="services-link"
-            onmouseover="handleHoverDropDown(this)"
-            onmouseleave="handleLeaveDropDown(this)"
-          >
-            <a href="#">Our Services</a>
-            <div>
-              <ul>
-                <li><a href="#">Development</a></li>
-                <li><a href="#">Online Marketing</a></li>
-                <li><a href="#">Digitization Advice</a></li>
-                <li><a href="#">Web Design & UI / UX</a></li>
-                <li><a href="#">Online Shops & E-Commerce</a></li>
-                <li><a href="#">Search Engine Optimization</a></li>
-                <li>
-                  <button class="button outline">
-                    View All <i class="fal fa-long-arrow-alt-right"></i>
-                  </button>
-                </li>
-              </ul>
+        <li class="credentials-link" onmouseover="handleHoverDropDown(this)" onmouseleave="handleLeaveDropDown(this)">
+          <a href="#">Credentials
+            <i class="fal fa-chevron-down"></i>
+          </a>
+          <div>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Customer testimonials</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="company-link">
+          <a href="#">Company <i class="fal fa-chevron-down"></i>
+
+            <div class="company-link-div">
+              <section class="nav-large-menu">
+                <div class="service-items">
+                  <h2>The ECONSOR Group</h2>
+                  <h4>
+                    70 employees, 6 locations, 1 goal: your success on the
+                    internet.
+                  </h4>
+                  <p>
+                    With 5 specialist teams, we offer you project experience
+                    and Internet competence bundled with one agency partner.
+                    We have been developing tailor-made solutions with
+                    Shopware, Magento, TYPO3 and WordPress since 2008.
+                    Seamlessly integrated into your digitization strategy and
+                    your online marketing concept.
+                  </p>
+
+                  <div class="links">
+                    <h3>Company Links</h3>
+                    <ul>
+                      <li>News</li>
+                      <li>Leadership team</li>
+                      <li>This is how we work</li>
+                      <li>5 reasons for ECONSOR</li>
+                      <li>Locations</li>
+                      <li>White paper</li>
+                      <li>Expert Videos</li>
+                      <li>Newsletter</li>
+                    </ul>
+                  </div>
+
+                  <div class="links">
+                    <h3>Our Partners</h3>
+                    <ul>
+                      <li>
+                        <img src="https://www.econsor.de/wp-content/uploads/2021/07/google-partner.svg" />
+                      </li>
+                      <li>
+                        <img src="https://www.econsor.de/wp-content/uploads/2021/01/badge-silver-member-new.svg" />
+                      </li>
+                      <li>
+                        <img src="https://www.econsor.de/wp-content/uploads/2021/11/shopware-solution.svg" />
+                      </li>
+                      <li>
+                        <img
+                          src="https://www.econsor.de/wp-content/uploads/2021/01/trusted-shops-sales-partner-minify.svg" />
+                      </li>
+                      <li>
+                        <img
+                          src="https://www.econsor.de/wp-content/uploads/2021/02/agentursiegel-econsor-sistrix.svg" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="action-items">
+                  <h2>Contact Us</h2>
+                  <div class="items">
+                    <img
+                      src="https://www.econsor.de/wp-content/uploads/2021/05/geschaeftsfuerer-sebastian-kuebler-1.jpg.webp" />
+                    <h3>Sebastian Kuebler</h3>
+                    <p>Founder of ECONSOR</p>
+                    <ul>
+                      <li>
+                        <i class="fal fa-phone-volume"></i>
+                        0711 / 46 05 89 - 51
+                      </li>
+                      <li>
+                        <i class="fal fa-envelope"></i>
+                        projekte@econsor.de
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    Would you like to get to know us and our services better?
+                    We would be happy to clarify your questions during an
+                    initial consultation.
+                    <button class="button outline">
+                      Get In Touch
+                      <i class="fal fa-chevron-double-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </section>
             </div>
-          </li>
+          </a>
+        </li>
 
-          <li
-            class="works-link"
-            onmouseover="handleHoverDropDown(this)"
-            onmouseleave="handleLeaveDropDown(this)"
-          >
-            <a href="#">Our Work</a>
-            <div>
-              <ul>
-                <li><a href="#">Development</a></li>
-                <li><a href="#">Online Marketing</a></li>
-                <li><a href="#">Digitization Advice</a></li>
-                <li><a href="#">Web Design & UI / UX</a></li>
-                <li><a href="#">Online Shops & E-Commerce</a></li>
-                <li><a href="#">Search Engine Optimization</a></li>
-                <li>
-                  <button class="button outline">
-                    View All <i class="fal fa-long-arrow-alt-right"></i>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><button class="button outline">Start A Project</button></li>
-        </ul>
-        <i class="far fa-bars" onclick="handleNavigationBar()"></i>
-      </div>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><button class="button outline">Start A Project</button></li>
+      </ul>
+      <i class="far fa-bars nav-icon" onclick="handleNavigationBar()"></i>
+    </div>
 
-      <!-- Mobile navigation -->
-      <section class="nav-drawer">
-        <i class="fal fa-times" onclick="handleNavigationBar()"></i>
-        <ul>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Our Work</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Articles</a></li>
-          <li><button class="button outline">Start A Project</button></li>
-        </ul>
-      </section>
-    </nav>
-
-    <main>
-      <!-- Hero Section -->
+    <!-- Mobile navigation -->
+    <section class="nav-drawer">
+      <i class="fal fa-times" onclick="handleNavigationBar()"></i>
+      <ul>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Our Work</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><button class="button outline">Start A Project</button></li>
+      </ul>
+    </section>
+  </nav>
+  <main>
+    <!-- Hero Section
       <section class="hero">
         <div>
           <h1>Online Shopping & E-Commerce</h1>
-        </div>
-      </section>
-
-      <section class="content">
-        <div class="info">
-          <h1 class="title">Lorem Ipsum è un testo segnaposto</h1>
-          <p>
-            Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-            tipografia e della stampa. Lorem Ipsum è considerato il testo
-            segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-            tipografo prese una cassetta di caratteri e li assemblò per
-            preparare un testo campione. È sopravvissuto non solo a più di
-            cinque secoli, ma anche al passaggio alla videoimpaginazione,
-            pervenendoci sostanzialmente inalterato. Fu reso popolare, negli
-            anni ’60, con la diffusione dei fogli di caratteri trasferibili
-            “Letraset”, che contenevano passaggi del Lorem Ipsum, e più
-            recentemente da software di impaginazione come Aldus PageMaker, che
-            includeva versioni del Lorem Ipsum.
-          </p>
-          <br />
-          <p>
-            Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-            tipografia e della stampa. Lorem Ipsum è considerato il testo
-            segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-            tipografo prese una cassetta
-          </p>
-
-          <div class="advantages">
-            <h3>What You Will Get:</h3>
-            <section>
-              <ul>
-                <li><i class="fas fa-badge-check"></i> Lorem Ipsum è un</li>
-                <li><i class="fas fa-badge-check"></i> sostanzialmente inalterato</li>
-                <li><i class="fas fa-badge-check"></i> contenevano passaggi</li>
-                <li><i class="fas fa-badge-check"></i> Fu reso popolare</li>
-                <li><i class="fas fa-badge-check"></i> Lorem Ipsum è un</li>
-              </ul>
-              <ul>
-                <li><i class="fas fa-badge-check"></i> Lorem Ipsum è un</li>
-                <li><i class="fas fa-badge-check"></i> sostanzialmente inalterato</li>
-                <li><i class="fas fa-badge-check"></i> contenevano passaggi</li>
-                <li><i class="fas fa-badge-check"></i> Fu reso popolare</li>
-                <li><i class="fas fa-badge-check"></i> Lorem Ipsum è un</li>
-              </ul>
-            </section>
-          </div>
           <div class="call-to-actions">
             <button class="button">
               Start A Project
               <i class="far fa-chevron-right"></i>
             </button>
             <button class="button outline">
-              Talk To An Expert
-              <i class="far fa-user-tie"></i>
+              Learn More
+              <i class="far fa-chevron-right"></i>
             </button>
           </div>
         </div>
-        <div class="img-div">
-          <img
-            src="https://businesspartnermagazine.com/wp-content/uploads/2021/02/7-Things-To-Consider-Before-Launching-An-Ecommerce-Business-1.jpeg"
-          />
+      </section> -->
+
+    <section class="intro">
+      <div>
+        <h1>Your partner for digitization</h1>
+        <h2>
+          More than 15 years of experience in supporting digitization projects
+        </h2>
+
+        <br />
+        <p>
+          Digital transformation is the greatest challenge of our time:
+          changed customer behavior, technologization and globalization. Our
+          approach to strategic consulting is diverse - in digitization as
+          well as optimization of your business and value-added processes.
+          With extensive project experience, digital expertise and an ear to
+          the pulse of the times, we advise companies in a targeted and
+          practical manner. We also offer the entire implementation from a
+          single source.
+        </p>
+
+        <div class="content">
+          <div class="advantages">
+            <h3>What You Will Get:</h3>
+            <section>
+              <ul>
+                <li>
+                  <i class="fas fa-badge-check"></i>Proven strategic tools
+                </li>
+                <li>
+                  <i class="fas fa-badge-check"></i> Holistic and agile
+                  approach
+                </li>
+                <li>
+                  <i class="fas fa-badge-check"></i> Extensive project
+                  experience with digital expertise
+                </li>
+              </ul>
+
+              <ul>
+                <li><i class="fas fa-badge-check"></i>Proactive impulses</li>
+                <li>
+                  <i class="fas fa-badge-check"></i>Know-how in innovation
+                  technologies
+                </li>
+                <li>
+                  <i class="fas fa-badge-check"></i>Implementation competence
+                  in-house
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <button class="button">Talk To An Expert</button>
+      </div>
+      <img src="./images/shopping.jpg" />
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="new-services">
+      <h1 class="title">Services</h1>
+      <p>what we offer you</p>
+      <!-- <hr class="line"> -->
+      <section class="services-cards">
+        <div class="services-card">
+          <i class="fal fa-handshake"></i>
+          <h2>Workshops</h2>
+          <p>
+            As an internet agency , we are pioneers for many ideas and
+            approaches in the field of digitization. As a digital agency, we
+            support the relaunch, the implementation of new e-commerce
+            strategies or take over the support of fundamental system
+            decisions.
+
+            <a href="#">
+              More about digitization
+              <i class="fal fa-chevron-double-right"></i>
+            </a>
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="fal fa-vector-square"></i>
+          <h2>System consulting</h2>
+          <p>
+            We create attractive web designs and UX/UI according to current
+            standards and innovative solutions. Whether it's a new website,
+            online shop or relaunch - we are experienced and know our way
+            around.
+
+            <a href="#">
+              More about web design
+              <i class="fal fa-chevron-double-right"></i>
+            </a>
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="fal fa-handshake"></i>
+          <h2>Information architecture</h2>
+          <p>
+            As an internet agency , we are pioneers for many ideas and
+            approaches in the field of digitization. As a digital agency, we
+            support the relaunch, the implementation of new e-commerce
+            strategies or take over the support of fundamental system
+            decisions.
+
+            <a href="#">
+              More about digitization
+              <i class="fal fa-chevron-double-right"></i>
+            </a>
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="fal fa-vector-square"></i>
+          <h2>Relaunch</h2>
+          <p>
+            We create attractive web designs and UX/UI according to current
+            standards and innovative solutions. Whether it's a new website,
+            online shop or relaunch - we are experienced and know our way
+            around.
+
+            <a href="#">
+              More about web design
+              <i class="fal fa-chevron-double-right"></i>
+            </a>
+          </p>
         </div>
       </section>
-    </main>
+    </section>
+
+
+
+        <!-- Our Clients -->
+        <section class="services our-clients">
+          <h1 class="title">These customers trust us          </h1>
+          <img
+            id="client-img"
+            src="https://www.econsor.de/wp-content/uploads/2021/09/unsere-kunden-4.jpg.webp"
+          />
+        </section>
+
+
+    <section class="intro other-1">
+      <div>
+        <h1>Mastering digitization together
+        </h1>
+        <h2>
+          MWith your local digital agency
+        </h2>
+
+        <br />
+        <p>
+          In the course of digitization, we advise and accompany companies in the transformation process. We close the
+          gap between a classic management consultancy and a digital agency. With the knowledge of innovation
+          technologies and the development regarding digitization in general, we choose flexibly between high-level
+          strategies and a pragmatic approach - depending on the requirements, budget and project orientation.
+          <br><br>
+          We don't just advise. Rather, as an agency, we also offer the implementation in our company via a concept and
+          a recommended solution. Your advantages: Few interfaces, an agile way of working and the right orientation of
+          our employees for a digital tomorrow.
+        </p>
+        <button class="button">Request An Offer</button>
+      </div>
+      <img src="https://www.econsor.de/wp-content/uploads/2020/08/digitalisierung-besprechung-2-800x587.jpg.webp" />
+    </section>
+
+
+    <!-- Articles Section -->
+    <section class="contact">
+      <h1 class="title">Do you have any questions ?
+      </h1>
+      <p>Do not hesitate to contact us
+      </p>
+
+      <div>
+        <form autocomplete="off">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email Address">
+          <input type="number" placeholder="Phone Number">
+          <textarea rows="5" placeholder="Message"></textarea>
+          <button class="button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- Articles Section -->
+    <section class="articles references">
+      <h1 class="title">News</h1>
+      <p>News about us and the web</p>
+
+      <div class="stories">
+        <div class="story-card">
+          <h3>
+            <a href="#">Yoast SEO vs. Rank Math – WordPress SEO Plugins Compared</a>
+          </h3>
+          <img src="https://www.econsor.de/wp-content/uploads/2022/08/Yoast-SEO-vs.-Rank-Math-710x375.png" />
+        </div>
+        <div class="story-card">
+          <h3>
+            <a href="#">
+              This is how recruiting works today: the guide for e-recruiting
+            </a>
+          </h3>
+          <img src="https://www.econsor.de/wp-content/uploads/2022/05/Beratungssituation-710x375.jpg" />
+        </div>
+
+        <div class="story-card">
+          <h3>
+            <a href="#">ECONSOR opens sixth location in Munich</a>
+          </h3>
+          <img src="https://www.econsor.de/wp-content/uploads/2022/07/internetagentur-muenchen-710x375.jpg" />
+        </div>
+        <div class="story-card">
+          <h3>
+            <a href="#">What is the Google Search Console? – this is what you need to
+              know about the tool</a>
+          </h3>
+          <img src="https://www.econsor.de/wp-content/uploads/2022/07/was-ist-google-search-console-710x375.jpg" />
+        </div>
+      </div>
+      <div class="action">
+        <button class="button">All News</button>
+      </div>
+    </section>
+
+
+    <section class="intro">
+      <div>
+        <h1>Mastering digitization together
+        </h1>
+        <h2>
+          MWith your local digital agency
+        </h2>
+
+        <br />
+        <p>
+          In the course of digitization, we advise and accompany companies in the transformation process. We close the
+          gap between a classic management consultancy and a digital agency. With the knowledge of innovation
+          technologies and the development regarding digitization in general, we choose flexibly between high-level
+          strategies and a pragmatic approach - depending on the requirements, budget and project orientation.
+          <br><br>
+          We don't just advise. Rather, as an agency, we also offer the implementation in our company via a concept and
+          a recommended solution. Your advantages: Few interfaces, an agile way of working and the right orientation of
+          our employees for a digital tomorrow.
+        </p>
+        <button class="button">Request An Offer</button>
+      </div>
+      <img src="https://www.econsor.de/wp-content/uploads/2020/08/digitalisierung-besprechung-2-800x587.jpg.webp" />
+    </section>
+
 
     <footer class="footer">
-      <div>
-        <h3>Services</h3>
-        <ul>
-          <a href="#"><li>Development</li></a>
-          <a href="#"><li>Online Marketing</li></a>
-          <a href="#"><li>Digitization Advice</li></a>
-          <a href="#"><li>Web Design & UI / UX</li></a>
-          <a href="#"><li>Online Shops & E-Commerce</li></a>
-          <a href="#"><li>Search Engine Optimization</li></a>
-        </ul>
+      <div class="links">
+        <a href="#">
+          <i class="fal fa-envelope"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
       </div>
-      <div>
-        <h3>Company</h3>
-        <ul>
-          <a href="#"><li>Articles</li></a>
-          <a href="#"><li>Careers</li></a>
-          <a href="#"><li>Contact</li></a>
-          <a href="#"><li>White Paper</li></a>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <a href="#"><li>Development</li></a>
-          <a href="#"><li>Online Marketing</li></a>
-          <a href="#"><li>Digitization Advice</li></a>
-          <a href="#"><li>Web Design & UI / UX</li></a>
-        </ul>
-      </div>
-      <div>
-        <h3>Want To Work With Us</h3>
-        <p>
-          Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-          tipografia e della.
-        </p>
-        <br />
-        <button class="button">
-          Start A Project
-          <i class="far fa-chevron-right"></i>
-        </button>
-      </div>
+
+      <ul>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Imprint</a>
+        </li>
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+        <li>
+          <a href="#">Conditions</a>
+        </li>
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
     </footer>
-  </body>
+</body>
+
 </html>

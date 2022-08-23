@@ -26,6 +26,7 @@
 }
 
 .hero .call-to-actions {
+  color: white;
   gap: 1rem;
   display: flex;
 }
@@ -43,6 +44,11 @@
   position: relative;
 }
 
+.hero button.outline {
+  color: white;
+  border: none;
+}
+
 @media screen and (max-width: 650px) {
   .hero h1 {
     font-size: 2.7rem;
@@ -55,8 +61,134 @@
   }
 }
 
-.content {
+
+/* Intro */
+.intro {
+  display: flex;
+  justify-content: space-between;
   padding: var(--section-gutter);
+}
+.intro > div {
+  width: 40%;
+}
+
+.intro div h1 {
+  font-size: 2.7rem;
+  font-family: NunitoExtraDeep;
+}
+
+.intro img {
+  width: 50%;
+  max-height: 500px;
+}
+
+.intro button {
+  margin-top: 1.3rem;
+}
+
+.intro.other-1 {
+  flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width: 650px) {
+  .intro {
+    flex-direction: column-reverse;
+  }
+  .intro > div {
+    width: 100%;
+  }
+  .intro img {
+    width: 100%;
+  }
+  .intro.other-1 {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+/* Our Services Section */
+.new-services {
+  color: white;
+  padding: var(--section-gutter);
+  background-color: var(--secondary-color);
+}
+
+.new-services .services-cards {
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  gap: 6rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-services .services-card {
+  gap: 1rem;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  height: fit-content;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  font-family: nunitoBold;
+}
+
+.new-services .services-card i {
+  font-size: 3.5rem;
+  color: var(--link-red);
+}
+
+.new-services .services-card p {
+  max-height: 47px;
+  overflow: hidden;
+  font-weight: 300;
+  font-family: NunitoRegular;
+}
+
+.new-services .services-card a {
+  text-decoration: underline;
+  margin-top: 1rem;
+  display: block;
+  color: var(--link-red);
+}
+
+.new-services .services-card a i {
+  font-size: 0.7rem;
+}
+
+.new-services .services-card:hover {
+  margin-top: -2rem;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.new-services .services-card:hover p {
+  max-height: 900px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+@media screen and (max-width: 650px) {
+  .new-services .services-card {
+    width: 100%;
+  }
+
+  .new-services .services-card p {
+    max-height: 700px;
+  }
+}
+
+
+
+.content {
   display: flex;
   justify-content: space-between;
 }
@@ -136,5 +268,44 @@
     gap: 1.3rem;
     display: flex;
     flex-direction: column;
+  }
+}
+
+
+.contact {
+  text-align: center;
+  padding: var(--section-gutter);
+  background-color: var(--light-red);
+}
+
+.contact div {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact form {
+  width: 35%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form * {
+  border-radius: .2rem;
+}
+
+.contact form input, textarea {
+  padding: .7rem;
+  border: 1px solid lightgray;
+}
+
+.contact form input:focus, textarea:focus {
+  outline: 1px solid var(--light-blue);
+}
+
+@media screen and (max-width: 650px) {
+  .contact form {
+    width: 100%;
   }
 }
